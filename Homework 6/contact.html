@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Zack Leach">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="description" content="Self made website for class">
+  <meta name="contact me" content="zachary.leach@umontana.edu">
+  <style>
+    h1{
+      font-size: 36pt;
+      font-style: fancy;
+    }
+    body{
+      background-color: #A20000;
+      font-size: 12pt;
+      font-color: black;
+    }
+    div {
+      background-color: #FFBE55;
+      margin: auto;
+      width: 60%;
+      text-align: center;
+    }
+    p{
+      font-size: 24px;
+    }
+    img{
+      width: 90%;
+      margin: auto;
+      display: block;
+    }
+    button{
+      font-size: 24px;
+    }
+    .box{
+      background-color: #FFF8DC;
+      color: brown;
+      width: 75%;
+      margin: auto;
+    }
+    </style>
+  <title>Zack Leach</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Zack Leach</h1>
+  <nav id="main-menu;" style="text-align: center; font-size:24px;">
+    <a href="./index.html">Home</a> &vert;
+    <a href="./story.html">A story</a> &vert;
+    <a href="./contact.html">Contact</a>
+  </nav>
+  <div>
+    <form action="./index.html" method="post">
+          <p>Do you accept the Terms of Agreement?</p>
+            <select name="rating">
+              <option value="0">Yes</option>
+              <option value="1">No</option>
+            </select>
+          <p>
+            <textarea name="comment" id="comment"
+            style="overflow: auto;
+              resize: none;
+              height: 20px;
+              width: 25%">Enter your Name and Email:
+            </textarea>
+          </p>
+          <p>
+            <input type="text" name="email" id="email"
+              placeholder="yours@email.com" style="width: 400px"/>
+            <input type ="image" name="submit" src="./images/submit_button.png"
+              alt="Submit" width="25px" height="20px"/>
+          </p>
+        </form>
+  </div>
+</body>
+</html>
