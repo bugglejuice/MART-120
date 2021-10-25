@@ -20,7 +20,7 @@
         var email = document.getElementById("email").value;
         var toc = document.getElementById("termsCon").value;
 //Checks if all fields are filled.
-        if (firstName == "" || firstPhone == "" || email == "") {
+        if (firstName == "" || firstPhone == "" || email == "" || toc == "") {
           event.preventDefault();
           if (firstName == ""){
             document.getElementById("fName").style.backgroundColor = "red";
@@ -40,7 +40,7 @@
           }else{
             document.getElementById("email").style.backgroundColor = "white";
           }
-          if (toc != "yes" || "no"){
+          if (toc == ""){
             document.getElementById("termsCon").style.backgroundColor = "red";
             document.getElementById("termsCon").focus();
           }else{
